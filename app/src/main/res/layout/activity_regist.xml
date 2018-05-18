@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:circleprogress="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_bg"
+    tools:context="com.example.testdemo.RegistActivity">
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_progress"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <com.example.testdemo.utils.CircleProgress
+            android:id="@+id/progress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            circleprogress:color1="@android:color/holo_red_light"
+            circleprogress:color2="@android:color/holo_green_light"
+            circleprogress:color3="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/loadingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:text="正在注册.."
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/score_ren"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="190dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/regist_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input_et_bg"
+            android:hint="用户名"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#cadee7"
+            android:textColorHint="#cadee7"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/regist_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input_et_bg"
+            android:hint="学号"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:textColor="#cadee7"
+            android:textColorHint="#cadee7"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/regist_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_input_et_bg"
+            android:hint="班级"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:textColor="#cadee7"
+            android:textColorHint="#cadee7"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/regist_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_input_et_bg"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:textColor="#cadee7"
+            android:textColorHint="#cadee7"
+            android:textSize="15sp"/>
+
+
+        <LinearLayout
+            android:id="@+id/login_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_botton_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="sharedView">
+
+            <Button
+                android:id="@+id/regist_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_botton_bg"
+                android:text="注册"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

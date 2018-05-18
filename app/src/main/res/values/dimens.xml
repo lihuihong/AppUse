@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fixed_height_bottom_padding">5dp</dimen>
+    <dimen name="sectionHeight">60dp</dimen>
+    <dimen name="default_circle_view_size">200dp</dimen>
+</resources>

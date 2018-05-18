@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_bg"
+    tools:context="com.example.testdemo.ChooseActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="80dp"
+        android:shadowColor="#a7000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="6"
+        android:text="AppLine"
+        android:textColor="@android:color/white"
+        android:textSize="33sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/app_time"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_input_et_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/app"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="AppTime"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/app_locahost"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_input_et_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/seat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="校园地图"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_seat"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_input_et_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/locahost"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="教室查询"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

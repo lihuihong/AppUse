@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppLine</string>
+    <string name="times">%1$s · %2$d 次</string>
+    <string name="service_name">NLService</string>
+</resources>

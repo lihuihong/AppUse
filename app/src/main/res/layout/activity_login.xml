@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleprogress="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_bg"
+    tools:context="com.example.testdemo.LoginActivity">
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_progress"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <com.example.testdemo.utils.CircleProgress
+            android:id="@+id/progress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            circleprogress:color1="@android:color/holo_red_light"
+            circleprogress:color2="@android:color/holo_green_light"
+            circleprogress:color3="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/loadingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:text="正在登陆.."
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="100dp"
+        android:shadowColor="#a7000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="6"
+        android:text="AppLine"
+        android:textColor="@android:color/white"
+        android:textSize="33sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input_et_bg"
+            android:hint="学号"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:textColor="#cadee7"
+            android:textColorHint="#cadee7"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_input_et_bg"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp"
+            android:textColor="#cadee7"
+            android:textColorHint="#cadee7"
+            android:textSize="15sp"/>
+
+
+        <LinearLayout
+            android:id="@+id/login_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_botton_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="sharedView">
+
+            <Button
+                android:id="@+id/login_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_botton_bg"
+                android:text="立即登录"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/login_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:shadowColor="#a5000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="6"
+                android:text="注册？"
+                android:textColor="#cadee7"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/login_jump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:shadowColor="#a5000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="6"
+                android:text="| 跳过登录"
+                android:textColor="#cadee7"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
